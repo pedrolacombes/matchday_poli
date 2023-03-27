@@ -67,6 +67,7 @@ url = 'https://docs.google.com/spreadsheets/d/'+sheet_id+'/gviz/tq?tqx=out:csv&s
 data = pd.read_csv(url)
 data = data[data['Index_Partida'] > 0]
 data = pd.DataFrame(data)
+st.dataframe(data)
 
 ## Puxando o arquivo com a base de videos
 
@@ -75,8 +76,6 @@ sheet_name = 'Videos'
 url = 'https://docs.google.com/spreadsheets/d/'+sheet_id+'/gviz/tq?tqx=out:csv&sheet='+sheet_name
 data_videos = pd.read_csv(url)
 my_df_video = pd.DataFrame(data_videos)
-
-
 
 ## Sidebar inicial com seleção do modo do site
 select_mode = st.sidebar.selectbox('Eu quero ver os dados e videos de:', ['Um jogador', 'Uma partida'])
@@ -268,7 +267,6 @@ if select_mode == 'Um jogador':
 	
 	# Gerando base my_df apenas com o time selecionado
 	my_df_team = data[data['Time_Jogador'] == select_team]
-	st.dataframe(df_final)
 	
 	# Adicionando sidebar
 	lista_jogadores = my_df_team.Nome_Jogador.unique()
