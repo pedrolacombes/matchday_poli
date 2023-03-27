@@ -279,8 +279,6 @@ if select_mode == 'Um jogador':
 	## Cache para my_df
 	@st.cache_data
 	def transform_my_df(my_df_team, select_player):
-	
-
 
 		# Gerando my_df apenas para jogador selecionado
 		my_df = my_df_team[my_df_team['Nome_Jogador'] == select_player]
@@ -288,7 +286,7 @@ if select_mode == 'Um jogador':
 		return my_df
 	
 	my_df = transform_my_df(my_df_team, select_player)
-	st.dataframe(my_df)
+	st.dataframe(dt_final)	
 
 	# declarando as 4 macro abas do aplicativo
 
