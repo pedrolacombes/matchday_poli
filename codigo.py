@@ -83,7 +83,7 @@ select_mode = st.sidebar.selectbox('Eu quero ver os dados e videos de:', ['Um jo
 
 ## Definindo a base df_geral que converte a base input em algo mais estruturado
 
-#@st.cache_data
+@st.cache_data
 def transform_df_final(data):
 
 	# Declarando lista de partidas
@@ -268,7 +268,7 @@ if select_mode == 'Um jogador':
 	
 	# Gerando base my_df apenas com o time selecionado
 	my_df_team = data[data['Time_Jogador'] == select_team]
-	st.dataframe(my_df_team)
+	st.dataframe(df_final)
 	
 	# Adicionando sidebar
 	lista_jogadores = my_df_team.Nome_Jogador.unique()
