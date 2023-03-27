@@ -288,6 +288,7 @@ if select_mode == 'Um jogador':
 		return my_df
 	
 	my_df = transform_my_df(my_df_team, select_player)
+	st.dataframe(my_df)
 
 	# declarando as 4 macro abas do aplicativo
 
