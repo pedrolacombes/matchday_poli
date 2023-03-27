@@ -268,6 +268,7 @@ if select_mode == 'Um jogador':
 	
 	# Gerando base my_df apenas com o time selecionado
 	my_df_team = data[data['Time_Jogador'] == select_team]
+	st.dataframe(my_df_team)
 	
 	# Adicionando sidebar
 	lista_jogadores = my_df_team.Nome_Jogador.unique()
