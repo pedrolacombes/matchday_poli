@@ -285,8 +285,7 @@ if select_mode == 'Um jogador':
 		my_df.reset_index(inplace = True)
 		return my_df
 	
-	my_df = transform_my_df(my_df_team, select_player)
-	st.dataframe(df_final)	
+	my_df = transform_my_df(my_df_team, select_player)	
 
 	# declarando as 4 macro abas do aplicativo
 
