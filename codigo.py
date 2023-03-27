@@ -365,7 +365,7 @@ if select_mode == 'Um jogador':
 
 			# Criando selectbox para escolher campeonato
 
-			campeonato_escolhido = st.selectbox('Selecione um campeonato', ['Society ECP 2023'])
+			campeonato_escolhido = st.selectbox('Selecione um campeonato', ['NDU 2023'])
 			
 			# Grupby para total das estatisticas do campeonato
 			df_stat_campeonato = df_final[df_final['Nome_Campeonato'] == campeonato_escolhido]
