@@ -83,7 +83,7 @@ select_mode = st.sidebar.selectbox('Eu quero ver os dados e videos de:', ['Um jo
 
 ## Definindo a base df_geral que converte a base input em algo mais estruturado
 
-@st.cache_data
+#@st.cache_data
 def transform_df_final(data):
 
 	# Declarando lista de partidas
