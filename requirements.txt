@@ -1,0 +1,10 @@
+matplotlib
+streamlit
+pandas
+numpy
+seaborn
+opencv-python-headless
+ffmpeg
+MoviePy
+pathlib
+bs4
